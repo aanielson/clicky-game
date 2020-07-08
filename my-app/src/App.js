@@ -1,34 +1,31 @@
-import React from "react";
+import React, {Component} from "react";
 import FriendCard from "./components/ImgCard";
 import Wrapper from "./components/Wrapper";
 // import Scores from "./components/Scores";
-import friends from "./cards.json";
+import cards from "./cards.json";
 import "./App.css";
 
-function App() {
-  return (
-    <Wrapper>
-      <h1 className="title">Friends List</h1>
-      <FriendCard
-        name={friends[0].name}
-        image={friends[0].image}
-        occupation={friends[0].occupation}
-        location={friends[0].location}
-      />
-      <FriendCard
-        name={friends[1].name}
-        image={friends[1].image}
-        occupation={friends[1].occupation}
-        location={friends[1].location}
-      />
-      <FriendCard
-        name={friends[2].name}
-        image={friends[2].image}
-        occupation={friends[2].occupation}
-        location={friends[2].location}
-      />
-    </Wrapper>
-  );
+class App extends Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    cards
+  };
+
+  // Map over this.state.friends and render a FriendCard component for each friend object
+  render() {
+    return (
+      <Wrapper>
+        {this.state.cards.map(card => (
+          <FriendCard
+            id={card.id}
+            key={card.id}
+            name={card.name}
+            image={card.image}
+          />
+        ))}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
