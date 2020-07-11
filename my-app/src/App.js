@@ -14,6 +14,7 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
+      
       <Wrapper>
         {this.state.cards.map(card => (
           <FriendCard
