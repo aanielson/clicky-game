@@ -7,35 +7,40 @@
       "grass",
       "poison"
     ],
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "Charmander",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
     "type": "fire",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Squirtle",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
     "type": "water",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 4,
     "name": "Pikachu",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
     "type": "electric",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 5,
     "name": "Machamp",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/068.png",
     "type": "fighting",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 6,
@@ -45,28 +50,32 @@
       "bug",
       "flying"
     ],
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 7,
     "name": "Eevee",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/133.png",
     "type": "normal",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 8,
     "name": "Snorlax",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png",
     "type": "normal",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 9,
     "name": "Mewtwo",
     "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png",
     "type": "psychic",
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 10,
@@ -76,7 +85,8 @@
       "dragon",
       "flying"
     ],
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 11,
@@ -86,7 +96,8 @@
       "ice",
       "flying"
     ],
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   },
   {
     "id": 12,
@@ -96,6 +107,7 @@
       "normal",
       "fiary"
     ],
-    "region": "Kanto"
+    "region": "Kanto",
+    "clicked": false
   }
 ]
