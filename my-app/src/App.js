@@ -18,6 +18,53 @@ class App extends Component {
     cards
   };
 
+  //reset all character clicked to false and reset score
+  restart = () => {
+    this.state.cards.forEach((pokemon) => (
+      pokemon.clicked = false
+    ));
+    this.setState({
+      score: 0,
+      message: "Gotta catch'em ALL!"
+    });
+  };
+
+  //reset game (like with restart) and tell user that they won
+  winner = () => {
+    this.state.cards.forEach((pokemon) => (
+      pokemon.clicked = false
+    ));
+    this.setState({
+      score: 0,
+      message: "Nice Pokédex!"
+    });
+  };
+
+  //manage click events to shuffle display and update score
+  handleClick = id => {
+    const found = this.state.cards.find((pokemon) => pokemon.id === id)
+    if (found.clicked === false) {
+      found.clicked = true;
+      this.state.cards.sort(() => Math.random() - 0.5);
+      if (this.state.score + 1 > this.state.highScore) {
+        this.setState({
+          highScore: this.state.highScore + 1
+        });
+      }
+      if (this.state.score + 1 === 12) {
+        this.winner();
+      } else {
+        this.setState({
+          score: this.state.score + 1,
+          message: "Excellent catch!"
+        });
+      }
+    } else {
+      this.state.cards.sort(() => Math.random() - 0.5);
+      this.restart();
+    }
+  }
+
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
@@ -31,6 +78,7 @@ class App extends Component {
               key={card.id}
               name={card.name}
               image={card.image}
+              click={this.handleClick}
             />
           ))}
         </Wrapper>
