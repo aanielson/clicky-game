@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "Bulbasaur",
-    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+    /*"image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",*/
+    "image": "https://image.flaticon.com/icons/svg/25/25231.svg",
     "type": [
       "grass",
       "poison"
