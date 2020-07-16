@@ -1,0 +1,11 @@
+footer {
+    font-family: 'Rowdies', cursive;
+    color: gold;
+    background-color: rgb(27, 27, 255);
+    text-align: center;
+    padding-bottom: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

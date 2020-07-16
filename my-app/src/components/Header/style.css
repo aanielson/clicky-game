@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Rowdies', cursive;
+    font-size: 40pt;
+    color: gold;
+    text-shadow: 4px 4px 6px rgb(27, 27, 255);
+    margin-top: 20px;
+}
+.head {
+    margin-bottom: 0px;
+    border-bottom: solid rgb(7, 7, 58);
+}
