@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Bulbasaur",
-    "image": "https://image.flaticon.com/icons/svg/25/25231.svg",
+    "image": "..public/images/bulbasaur.png",
     "type": [
       "grass",
       "poison"
